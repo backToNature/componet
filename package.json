@@ -1,0 +1,29 @@
+{
+  "name": "componet",
+  "version": "0.0.0",
+  "description": "componet ========",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/backToNature/componet.git"
+  },
+  "author": "guohao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/backToNature/componet/issues"
+  },
+  "homepage": "https://github.com/backToNature/componet",
+  "devDependencies": {
+        "gulp": "*",
+        "gulp-util": "*",
+        "gulp-code": "*",
+        "gulp-less": "*",
+        "gulp-coffee": "*",
+        "gulp-concat": "*",
+        "gulp-if": "*",
+        "gulp-sprite-generator": "*"
+  }
+}
