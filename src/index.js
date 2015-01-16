@@ -67,6 +67,23 @@ var componet = {
             }
 
             head.appendChild(script);
+        },
+        /**
+         * @description 解析url，返回url参数的对象
+         */
+        parseQueryString: function(url) {
+            var reg_url = /^[^\?]+\?([\w\W]+)$/,
+                reg_para = /([^&=]+)=([\w\W]*?)(&|$)/g, //g is very important
+                arr_url = reg_url.exec(url),
+                ret = {};
+            if (arr_url && arr_url[1]) {
+                var str_para = arr_url[1],
+                    result;
+                while ((result = reg_para.exec(str_para)) != null) {
+                    ret[result[1]] = result[2];
+                }
+            }
+            return ret;
         }
 };
 
