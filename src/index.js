@@ -84,6 +84,15 @@ var componet = {
                 }
             }
             return ret;
+        },
+    // #阻止冒泡
+        stopBubble: function (e) {
+        e = e || window.event;
+        if (e.stopPropagation) {
+            e.stopPropagation();
+        } else {
+            e.cancelBubble = true;
         }
+    }
 };
 
