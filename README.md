@@ -3,6 +3,10 @@ componet
 
 ## 原生js扩展方法(兼容各种浏览器)，不断扩充中...i
 
+## event
+
+模拟backbone的event对象
+
 ### json2str
 
 把json数据转化为string类型
@@ -18,3 +22,6 @@ componet
 ### parseQueryString
 
 解析url，返回url参数的键值对的对象
+
+
+
