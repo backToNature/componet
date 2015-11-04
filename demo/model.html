@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="../src/event.js"></script>
+    <script src="../src/model.js"></script>
+    <script>
+        var niu_m = new model({
+            one: 2
+        });
+        _.extend(niu_m, {
+            one: function () {
+                var _this = this;
+                _this.set('one', 1);
+            }
+        });
+        niu_m.on('change:one1', function () {
+            alert(12);
+        });
+
+        var la = new model({
+            two: 2
+        });
+        _.extend(la, {
+            two: function () {
+                var _this = this;
+                _this.set('two', 1);
+            }
+        });
+
+
+    </script>
+</body>
+</html>
